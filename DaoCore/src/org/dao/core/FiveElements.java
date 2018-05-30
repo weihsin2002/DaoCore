@@ -1,16 +1,25 @@
 package org.dao.core;
 
 public enum FiveElements {
-	METAL(1),
-	WOOD(2);
+	METAL(1, "Jin"),
+	WOOD(2, "Mu"),
+	Water(3, "Shui"),
+	Fire(4, "Huo"),
+	Earth(5, "Tu");
 	
     private int order;
+    private String wuXing;
 
-    FiveElements(int order) {
+    FiveElements(int order, String wuXing) {
         this.order = order;
+        this.wuXing = wuXing;
     }
 
-    public int elementOrder() {
+    public int order() {
         return order;
+    }
+    
+    public String wuXing() {
+        return wuXing;
     }
 }
