@@ -9,7 +9,7 @@ public enum EarthlyBranches {
 	SI (6, "Si"),
 	WU (7, "Wu"),
 	WEI (8, "Wei"),
-	SHENG (9, "Shen"),
+	SHENG (9, "Sheng"),
 	YOU (10, "You"),
 	XU (11, "Xu"),
 	HAI (12, "Hai");
