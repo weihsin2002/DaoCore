@@ -32,4 +32,13 @@ public enum Palaces {
 	public String gong() {
 		return gong;
 	}
+	
+	public static Palaces fromOrder (int order) {
+		for (Palaces p : Palaces.values()) {
+			if (order == p.order()) {
+				return p;
+			}
+		}
+		return null;
+	}
 }
