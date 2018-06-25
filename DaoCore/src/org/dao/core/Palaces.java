@@ -37,6 +37,14 @@ public enum Palaces {
 		return gong;
 	}
 	
+	public EarthlyBranches earthlyBranch1() {
+		return earthlyBranch1;
+	}
+
+	public EarthlyBranches earthlyBranch2() {
+		return earthlyBranch2;
+	}
+	
 	public static Palaces fromOrder (int order) {
 		for (Palaces p : Palaces.values()) {
 			if (order == p.order()) {

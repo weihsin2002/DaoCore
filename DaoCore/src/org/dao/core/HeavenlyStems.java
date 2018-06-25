@@ -29,6 +29,15 @@ public enum HeavenlyStems {
 		return tianGan;
 	}
 	
+	public static HeavenlyStems heavenlyStems (int order) {
+		for (HeavenlyStems h : HeavenlyStems.values()) {
+			if (order == h.order()) {
+				return h;
+			}
+		}
+		return null;		
+	}
+	
 	public static String fromOrder(int order) {
 		for (HeavenlyStems h : HeavenlyStems.values()) {
 			if (order == h.order()) {
